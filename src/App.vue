@@ -1,0 +1,48 @@
+title:app
+auther:chinmay
+date:14/6/2021
+
+
+
+<template>
+  <div id="nav">
+    <router-link class="button_slide slide_right" to="/signup">SIGN UP</router-link> |
+    <router-link class="button_slide slide_left" to="/login">LOG IN</router-link>
+    
+  </div>
+
+  <router-view class="body"/>
+</template>
+
+<style>
+.body{
+  border: 5px solid;
+}
+hr{
+        height: 1px;
+        background-color: black;
+        border: none;
+    }
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+  background-color: chartreuse;
+}
+</style>
